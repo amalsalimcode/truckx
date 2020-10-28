@@ -21,6 +21,12 @@ When an admin wants to issue IOT reset, the request goes to the server as a REST
 
 ![db](https://github.com/amalsalimcode/truckx/blob/main/readme_img/truckx_db.png)
 
+Why mysql:
+The mysql db holds entries of all alarms. I made the assumption that there isn't going to be a very large number of alarms for a given IOT. And for scalability the node can be tied to a range of IOTs. Hence mysql made sense here
+
+Why nosql:
+the locations are being send on a per minute basis. This is a large number to store into db. Hence we need a scalable large volume db. Ideally I would choose cassandra, since it has more availability, but for this purpose mongodb also works fine
+
 # Details:
 
 **Login**:
