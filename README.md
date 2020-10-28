@@ -17,6 +17,7 @@ REST: There are multiple endpoints used by the IOT. This includes sending an ala
 There is also a connection that uses REST and Socket.
 When an admin wants to issue IOT reset, the request goes to the server as a REST call, which then subsequents as a socket call to the IOT
 
+# Database Schema
 
 ![db](https://github.com/amalsalimcode/truckx/blob/main/readme_img/truckx_db.png)
 
