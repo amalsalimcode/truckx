@@ -1,6 +1,8 @@
 
 
-![architecture](https://github.com/amalsalimcode/truckx/blob/main/readme_img/truckx.png)
+![architecture](https://github.com/amalsalimcode/truckx/blob/main/readme_img/truckx_arch.png)
+
+![db](https://github.com/amalsalimcode/truckx/blob/main/readme_img/truckx_db.png)
 
 # Architecture
 
