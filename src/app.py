@@ -33,10 +33,6 @@ def main():
     imei = resp
     if r_type == "alarm":
         return handle_alarm(post_data, imei)
-    elif r_type == "location":
-        db.create_location(imei, post_data.get("time"),
-                           post_data.get("lat"), post_data.get("long"))
-        return 'Done', 200
 
 
 @server.route("/videoupload", methods=['POST'])
