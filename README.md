@@ -50,6 +50,17 @@ Currently this is a GET request where the user can specify filters. Currently th
 
 
 ## Scalability:
+The flask server needs to be wrapped with an nginx to make it a webserver. 
+The number of nodes (servers) can be increased and a load balancer can be put infront of it. The load balancer can have a hashed map of imei devices to the server instance.
+
+There can be a separate auth server will take care of the authentication, so that the microservices inbetween doesn't need to worry about it.
+
+The SQL server can have a redis infront of it, to increase the query time
+There can be a cache infront of the secondary storage that has recently visited files with LRU policy
+
+The mongoDb allows scalability, and as the coordinates for a particular device increases, then a separate node can be initialized for new coordinates. This way each node contains the locations for a particular daterange, given that the user is likely to query on date. Otherwise the nodes can be initialized based on proximity of the coordinates
+
+
 
 
 
